@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html, body{
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: url(file:///C:/Users/Aryan/Desktop/img.jpg);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            font-family: 'Roboto', sans-serif;
+        }
+        .content{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            text-align: center;
+            transform: translate(-50%, -50%);
+        }
+        hr{
+            margin: auto;
+            width: 80%;
+            border: 1.5px solid aqua;
+        }
+        h1{
+            font-size: 40px;
+            letter-spacing: 30px;
+            font-weight: 100;
+            color: #fff;
+        }
+        p{
+            font-size: 60px;
+            color: #fff;
+            font-weight: 500;
+            word-spacing: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Coming Soon</h1>
+        <hr>
+        <p id="demo"></p>
+    </div>
+</body>
+<script>
+    var countDownDate = new Date("Dec 31, 2019 00:00:00").getTime();
+    var countDown = setInterval(function(){
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 *60));
+        var minutes = Math.floor((distance % (1000 * 60 *60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+        if(distance < 0){
+            clearInterval(countDown);
+            document.getElementById("demo").innerHTML = "HAPPY NEW YEAR 2020";
+        }
+    }, 1000);
+</script>
+</html>

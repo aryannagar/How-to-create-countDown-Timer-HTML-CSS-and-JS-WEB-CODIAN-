@@ -1,0 +1,12 @@
+WEB CODIAN
+
+In this repository you will going to find the stuff related about How you can create a COuntDown Timer with using a small
+piece of code of HTML, CSS and JavaScript. This is one of the easiest ways to do so. Best of my knowledge.
+
+This code is free to use for any one and anywhere. You can use this code anywhere you want to use in your website.
+
+For Video Tutorial: https://www.youtube.com/watch?v=k_fzd-ByrZ8&
+
+For more interesting, simple and unique stuff visit our Youtube Channel
+
+WEB CODIAN: https://www.youtube.com/channel/UCvDfMTJRY5y-O35vQCVGWKw
